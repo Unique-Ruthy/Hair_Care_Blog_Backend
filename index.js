@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 //loads data from env variable
 require("dotenv").config();
 const authRoute = require("./routes/auth");
